@@ -1,0 +1,41 @@
+/* Background Hero */
+.hero {
+  min-height: 100vh;
+  background: url("hero-bg.jpg") no-repeat center center/cover;
+  position: relative;
+  padding-top: 70px; /* untuk navbar fixed */
+}
+
+/* Overlay gelap agar teks lebih jelas */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Warna tambahan */
+h2 {
+  color: #333;
+}
+.card h5 {
+  font-weight: bold;
+}
+
+/* Responsif tambahan */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
