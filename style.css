@@ -8,7 +8,7 @@
 /* HERO SECTION */
 .hero {
   height: 100vh; /* full screen */
-  background: url("img/sekolah.jpg") repeat-x center/cover;
+  background: url("sekolah.jpg") repeat-x center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,3 +66,4 @@
     font-size: 1rem;
   }
 }
+
